@@ -1,0 +1,15 @@
+@import "components/all";
+@import "normalize";
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  grid-template-rows: 0.3fr 2.4fr 0.3fr;
+  gap: 0px 0px;
+  grid-template-areas: "H H" "I N" "F F";
+}
