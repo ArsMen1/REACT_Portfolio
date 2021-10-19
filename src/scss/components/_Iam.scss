@@ -1,4 +1,16 @@
 .Iam {
+  display: inline;
   height: 80vh;
   grid-area: I;
+  * {
+    color: #fff;
+  }
+  p {
+    float: right;
+    font-size: 27px;
+  }
+  img {
+    padding-right: 10px;
+    float: left;
+  }
 }

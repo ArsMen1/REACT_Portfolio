@@ -1,6 +1,12 @@
 .Header {
   grid-area: H;
-  h1 {
+  * {
+    display: inline;
     color: #fff;
+  }
+  p {
+    position: absolute;
+    right: 100px;
+    font-size: 40px;
   }
 }

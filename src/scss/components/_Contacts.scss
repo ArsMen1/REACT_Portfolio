@@ -1,0 +1,42 @@
+.Contacts {
+  max-width: 100vw;
+  * {
+    color: #fff;
+  }
+  p {
+    font-size: 27px;
+  }
+}
+
+.Contacts__link {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .link {
+    .phone {
+      margin-left: 70px;
+      cursor: default;
+    }
+
+    .phoneNumbers {
+      color: #000;
+    }
+
+    .phoneNumbers:hover {
+      color: #fff;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: 5px solid #000;
+    p:hover {
+      text-decoration: underline;
+    }
+  }
+}
