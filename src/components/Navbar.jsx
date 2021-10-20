@@ -7,6 +7,7 @@ function Navbar() {
   const oneSelectItem = (index) => {
     setActiveItem(index);
   };
+
   return (
     <div className="Navbar">
       <div className="Navbar__menu">
