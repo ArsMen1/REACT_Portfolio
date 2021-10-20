@@ -23,14 +23,19 @@
       width: 130px;
     }
 
-    .launchpad {
-      background: url(../../assets/img/launchpad.png) 0 0/100% 100% no-repeat;
-    }
-
     .Game__description {
       display: flex;
       justify-content: center;
       align-items: flex-end;
+    }
+    .launchpad {
+      background: url(../../components/GamesFolder/img/launchpad.png) 0 0/100%
+        100% no-repeat;
+    }
+
+    .snake {
+      background: url(../../components/GamesFolder/img/snake.png) 0 0/100% 100%
+        no-repeat;
     }
   }
 }

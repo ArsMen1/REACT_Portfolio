@@ -1,0 +1,38 @@
+.launchpad {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #111;
+
+  .container {
+    justify-content: center;
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    height: 200px;
+  }
+
+  p {
+    font-size: 27px;
+  }
+
+  .board {
+    width: 250px;
+    height: 150px;
+  }
+
+  .square {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-color: #1d1d1d;
+    margin: 2px;
+    box-shadow: 0 0 2px #000;
+    transition: 1s ease;
+  }
+
+  .square:hover {
+    transition-duration: 0ms;
+  }
+}

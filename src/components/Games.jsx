@@ -19,22 +19,10 @@ function Games() {
           <p className="Game__description">launchpad</p>
         </div>
         <div className="Game">
-          <Link to="/-------------------">
-            <div className="Game__view"></div>
+          <Link to="/tic_tac_toe">
+            <div className="Game__view tic_tac_toe"></div>
           </Link>
-          <p className="Game__description">-------------------</p>
-        </div>
-        <div className="Game">
-          <Link to="/-------------------">
-            <div className="Game__view"></div>
-          </Link>
-          <p className="Game__description">---------------------</p>
-        </div>
-        <div className="Game">
-          <Link to="/-------------------">
-            <div className="Game__view"></div>
-          </Link>
-          <p className="Game__description">----------------------</p>
+          <p className="Game__description">Tic tac toe</p>
         </div>
         <div className="Game">
           <Link to="/-------------------">

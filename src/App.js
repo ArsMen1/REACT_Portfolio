@@ -9,7 +9,8 @@ import {
   Work,
 } from "./components";
 import { Route } from "react-router";
-import { Launchpad, Snake } from "./components/GamesFolder";
+import { Launchpad } from "./components/GamesFolder";
+import Snake from "./components/GamesFolder/Snake/Snake";
 
 function App() {
   return (
