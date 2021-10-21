@@ -28,14 +28,25 @@
       justify-content: center;
       align-items: flex-end;
     }
+
     .launchpad {
-      background: url(../../components/GamesFolder/img/launchpad.png) 0 0/100%
+      background: url(../../../components/GamesFolder/img/launchpad.png) 0 0/100%
         100% no-repeat;
     }
 
     .snake {
-      background: url(../../components/GamesFolder/img/snake.png) 0 0/100% 100%
-        no-repeat;
+      background: url(../../../components/GamesFolder/img/snake.png) 0 0/100%
+        100% no-repeat;
+    }
+
+    .aimTraining {
+      background: url(../../../components/GamesFolder/img/arcade.png) 0 0/100%
+        100% no-repeat;
+    }
+
+    .tic_tac_toe {
+      background: url(../../../components/GamesFolder/img/tic-tac-toe-hand-drawn-game.png)
+        0 0/100% 100% no-repeat;
     }
   }
 }

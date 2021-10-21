@@ -4,6 +4,8 @@
 @import "./Navbar";
 @import "./Work";
 @import "./Contacts";
-@import "./Games";
-@import "./Launchpad";
+@import "./Games/Games";
+@import "./Games/Launchpad";
+@import "./Games/aimTraining";
+@import "../../components/GamesFolder/Tic_tac_toe/tic_tac_toe";
 @import "../../components/GamesFolder/Snake/Snake";

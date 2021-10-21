@@ -25,10 +25,10 @@ function Games() {
           <p className="Game__description">Tic tac toe</p>
         </div>
         <div className="Game">
-          <Link to="/-------------------">
-            <div className="Game__view"></div>
+          <Link to="/aimTraining">
+            <div className="Game__view aimTraining"></div>
           </Link>
-          <p className="Game__description">---------------------</p>
+          <p className="Game__description">Aim Training</p>
         </div>
       </div>
     </div>

@@ -7,11 +7,14 @@ function Footer() {
         Development is my passion Задачи:
         <ol>
           <li>день\ночь</li>
-          <li>игры </li>
+          <li>Игры </li>
+          <li>Блоки </li>
+          <li>Фотка</li>
           <li>Разместить на гит сервр </li>
+          <li>Fonts?</li>
         </ol>
       </p>
-      <p>Done with React.JS</p>
+      <p>Done with React .JS</p>
     </div>
   );
 }
