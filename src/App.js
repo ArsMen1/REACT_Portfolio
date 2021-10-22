@@ -9,7 +9,7 @@ import {
   Work,
 } from "./components";
 import { Route } from "react-router";
-import { Launchpad, AimTraining } from "./components/GamesFolder";
+import Launchpad from "./components/GamesFolder/Launchpad.jsx";
 import Snake from "./components/GamesFolder/Snake/Snake";
 import Tic_tac_toe from "./components/GamesFolder/Tic_tac_toe/Tic_tac_toe";
 
@@ -24,7 +24,6 @@ function App() {
         <Route path="/contacts" component={Contacts} exact />
         <Route path="/snake" component={Snake} exact />
         <Route path="/Launchpad" component={Launchpad} exact />
-        <Route path="/aimTraining" component={AimTraining} exact />
         <Route path="/tic_tac_toe" component={Tic_tac_toe} exact />
         <Navbar />
         <Footer />

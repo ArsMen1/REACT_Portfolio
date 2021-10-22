@@ -1,9 +1,16 @@
 .Header {
+  margin-bottom: 20px;
   grid-area: H;
+
   * {
     display: inline;
     color: #fff;
   }
+
+  h1 {
+    margin-left: 40px;
+  }
+
   p {
     position: absolute;
     right: 100px;

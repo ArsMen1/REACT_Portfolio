@@ -23,12 +23,6 @@ function Games() {
           </Link>
           <p className="Game__description">Tic tac toe</p>
         </div>
-        <div className="Game">
-          <Link to="/aimTraining">
-            <div className="Game__view aimTraining"></div>
-          </Link>
-          <p className="Game__description">Aim Training</p>
-        </div>
       </div>
     </div>
   );
