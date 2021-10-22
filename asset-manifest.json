@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/REACT_portfolio/static/css/main.8c9d57eb.chunk.css",
+    "main.js": "/REACT_portfolio/static/js/main.0115e861.chunk.js",
+    "main.js.map": "/REACT_portfolio/static/js/main.0115e861.chunk.js.map",
+    "runtime-main.js": "/REACT_portfolio/static/js/runtime-main.2f6a21a3.js",
+    "runtime-main.js.map": "/REACT_portfolio/static/js/runtime-main.2f6a21a3.js.map",
+    "static/js/2.dd98d5b8.chunk.js": "/REACT_portfolio/static/js/2.dd98d5b8.chunk.js",
+    "static/js/2.dd98d5b8.chunk.js.map": "/REACT_portfolio/static/js/2.dd98d5b8.chunk.js.map",
+    "static/js/3.5bbfccb8.chunk.js": "/REACT_portfolio/static/js/3.5bbfccb8.chunk.js",
+    "static/js/3.5bbfccb8.chunk.js.map": "/REACT_portfolio/static/js/3.5bbfccb8.chunk.js.map",
+    "index.html": "/REACT_portfolio/index.html",
+    "static/css/main.8c9d57eb.chunk.css.map": "/REACT_portfolio/static/css/main.8c9d57eb.chunk.css.map",
+    "static/js/2.dd98d5b8.chunk.js.LICENSE.txt": "/REACT_portfolio/static/js/2.dd98d5b8.chunk.js.LICENSE.txt",
+    "static/media/Me.e5db2ecc.jpg": "/REACT_portfolio/static/media/Me.e5db2ecc.jpg",
+    "static/media/app.scss": "/REACT_portfolio/static/media/whatsapp.97b90b6e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2f6a21a3.js",
+    "static/js/2.dd98d5b8.chunk.js",
+    "static/css/main.8c9d57eb.chunk.css",
+    "static/js/main.0115e861.chunk.js"
+  ]
+}
