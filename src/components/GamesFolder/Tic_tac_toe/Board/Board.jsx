@@ -1,5 +1,5 @@
 import React from "react";
-import Square from "./Square";
+import Square from "../Board/Board";
 
 const Board = ({ squares, click, winnerValue }) => {
   let winnerValues = winnerValue === null ? 0 : winnerValue;

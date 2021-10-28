@@ -1,5 +1,5 @@
 import React from "react";
-import Me from "../assets/img/Me.jpg";
+import Me from "../../assets/img/Me.jpg";
 
 function Iam() {
   return (

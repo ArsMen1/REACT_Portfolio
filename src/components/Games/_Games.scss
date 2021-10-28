@@ -17,7 +17,6 @@
       display: flex;
       flex-wrap: wrap;
       margin: 10px;
-      border: 1px solid #fff;
       cursor: pointer;
       height: 130px;
       width: 130px;
@@ -30,18 +29,20 @@
     }
 
     .launchpad {
-      background: url(../../../components/GamesFolder/img/launchpad.png) 0 0/100%
-        100% no-repeat;
+      background: url(../GamesFolder/icon/launchpad.png) 0 0/100% 100% no-repeat;
     }
 
     .snake {
-      background: url(../../../components/GamesFolder/img/snake.png) 0 0/100%
-        100% no-repeat;
+      background: url(../GamesFolder/icon/snake.png) 0 0/100% 100% no-repeat;
     }
 
     .tic_tac_toe {
-      background: url(../../../components/GamesFolder/img/tic-tac-toe-hand-drawn-game.png)
-        0 0/100% 100% no-repeat;
+      background: url(../GamesFolder/icon/tic-tac-toe-hand-drawn-game.png) 0 0/100%
+        100% no-repeat;
+    }
+
+    .Twenty48 {
+      background: url(../GamesFolder/icon/2048.png) 0 0/100% 100% no-repeat;
     }
   }
 }
