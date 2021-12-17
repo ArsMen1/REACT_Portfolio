@@ -29,6 +29,12 @@ function Games() {
           </Link>
           <p className="Game__description">2048</p>
         </div>
+        <div className="Game">
+          <Link to="/RememberPictures">
+            <div className="Game__view RememberPictures"></div>
+          </Link>
+          <p className="Game__description">Remember Pictures</p>
+        </div>
       </div>
     </div>
   );

@@ -13,6 +13,7 @@ import Launchpad from "./components/GamesFolder/Launchpad/Launchpad";
 import Snake from "./components/GamesFolder/Snake/Snake";
 import Tic_tac_toe from "./components/GamesFolder/Tic_tac_toe/Tic_tac_toe";
 import Twenty48 from "./components/GamesFolder/2048/Twenty48";
+import RememberPictures from "./components/GamesFolder/RememberPictures/RememberPictures";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/Launchpad" component={Launchpad} exact />
         <Route path="/tic_tac_toe" component={Tic_tac_toe} exact />
         <Route path="/2048" component={Twenty48} exact />
+        <Route path="/RememberPictures" component={RememberPictures} exact />
         <Navbar />
         <Footer />
       </div>
