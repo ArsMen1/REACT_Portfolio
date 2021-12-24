@@ -50,7 +50,6 @@ const RememberPictures = () => {
 
   const flipCard = (index) => () => {
     setOpenCards((opened) => [...opened, index]);
-    setMoves((prevMove) => +prevMove + 1);
   };
 
   React.useEffect(() => {
@@ -58,12 +57,11 @@ const RememberPictures = () => {
       setOpenCards([]);
     }
 
-    if (openCards > 2) {
-      console.log(matched); //Посчитаьт неповторяющиеся
-    }
-
     const firstMatched = arrayCards[openCards[0]];
-    const secondMatched = arrayCards[openCards[1]];
+    const secondMatched = arrayCards[openCards[1]] !== arrayCards[openCards[0]];
+    if (secondMatched) {
+      setMoves((prevMove) => +prevMove + 1);
+    }
 
     if (secondMatched && firstMatched.id === secondMatched.id) {
       setMatched([...matched, firstMatched.id]);
@@ -87,8 +85,8 @@ const RememberPictures = () => {
           {arrayCards.map((item, index) => {
             let isFlippe = false;
 
-            if (openCards.includes(index)) isFlippe = true;
-            if (matched.includes(item.id)) isFlippe = true;
+            if (openCards.includes(index)) isFlippe = true; //переворачивает карточку
+            if (matched.includes(item.id)) isFlippe = true; //Если карточки совпадают, не переворачивает обратно
 
             return (
               <div
