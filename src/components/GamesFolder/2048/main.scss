@@ -1,3 +1,30 @@
+@for $fromColumn from 0 through 3 {
+  @for $toColumn from 0 through 3 {
+    $name: column_from_#{$fromColumn}_to_#{$toColumn};
+
+    @if $fromColumn == $toColumn {
+      .#{$name} {
+        left: 110 * $toColumn + 5px;
+      }
+    } @else {
+      .#{$name} {
+        animation-duration: 0.2s;
+        animation-name: $name;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes #{$name} {
+        from {
+          left: 110 * $fromColumn + 5px;
+        }
+        to {
+          left: 110 * $toColumn + 5px;
+        }
+      }
+    }
+  }
+}
+
 @font-face {
   font-family: "Clear Sans";
   src: url("./clear-sans.ttf") format("truetype");
@@ -60,6 +87,15 @@
 
   .score-header {
     font-size: 50%;
+  }
+
+  .record-box {
+    background-color: #3d2963;
+    color: rgba(255, 255, 255, 0.5);
+    min-width: 50px;
+    width: 100px;
+    padding: 5px 15px;
+    border-radius: 7px;
   }
 
   .score-box {

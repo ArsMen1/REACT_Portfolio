@@ -2,7 +2,6 @@ import React from "react";
 import BoardView from "./JS/Board";
 
 import "./main.scss";
-import "./styles.scss";
 
 const Twenty48 = () => {
   return (

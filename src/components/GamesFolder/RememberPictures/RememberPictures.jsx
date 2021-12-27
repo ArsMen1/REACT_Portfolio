@@ -23,10 +23,10 @@ const initialCards = [
 ];
 
 const RememberPictures = () => {
-  const [arrayCards, setArrayCards] = React.useState([]);
-  const [openCards, setOpenCards] = React.useState([]);
-  const [matched, setMatched] = React.useState([]);
-  const [moves, setMoves] = React.useState([]);
+  const [arrayCards, setArrayCards] = React.useState([]); //все карточки
+  const [openCards, setOpenCards] = React.useState([]); //какая карточка открылась
+  const [matched, setMatched] = React.useState([]); // какие пары карточек уже открыты
+  const [moves, setMoves] = React.useState([]); //Сделано нажатий на карточки
 
   const shuffle = (array) => {
     let currenyIndex = array.length,
@@ -50,6 +50,7 @@ const RememberPictures = () => {
 
   const flipCard = (index) => () => {
     setOpenCards((opened) => [...opened, index]);
+    setMoves((prevMove) => +prevMove + 1);
   };
 
   React.useEffect(() => {
@@ -58,10 +59,7 @@ const RememberPictures = () => {
     }
 
     const firstMatched = arrayCards[openCards[0]];
-    const secondMatched = arrayCards[openCards[1]] !== arrayCards[openCards[0]];
-    if (secondMatched) {
-      setMoves((prevMove) => +prevMove + 1);
-    }
+    const secondMatched = arrayCards[openCards[1]];
 
     if (secondMatched && firstMatched.id === secondMatched.id) {
       setMatched([...matched, firstMatched.id]);
@@ -82,29 +80,39 @@ const RememberPictures = () => {
       <div className="RememberPictures">
         <p className="number-of-strokes">Made moves: {moves}</p>
         <div className="cards">
-          {arrayCards.map((item, index) => {
-            let isFlippe = false;
+          {matched.length > 7 ? (
+            <p className="rememberPicturesWin">
+              You have found all the matches!
+            </p>
+          ) : (
+            arrayCards.map((item, index) => {
+              let isFlippe = false;
 
-            if (openCards.includes(index)) isFlippe = true; //переворачивает карточку
-            if (matched.includes(item.id)) isFlippe = true; //Если карточки совпадают, не переворачивает обратно
+              if (openCards.includes(index)) isFlippe = true; //переворачивает карточку
+              if (matched.includes(item.id)) isFlippe = true; //Если карточки совпадают, не переворачивает обратно
 
-            return (
-              <div
-                key={index}
-                className={`card ${isFlippe ? "flipped" : ""}`}
-                onClick={flipCard(index)}
-              >
-                <div className="inner">
-                  <div className="front">
-                    <img src={item.img} width="100" />
-                  </div>
-                  <div className="back">
-                    <img src={IconFlip} width="100" />
+              return (
+                <div
+                  key={index}
+                  className={`card ${isFlippe ? "flipped" : ""}`}
+                  onClick={
+                    isFlippe
+                      ? console.log("This card is already flipped")
+                      : flipCard(index)
+                  }
+                >
+                  <div className="inner">
+                    <div className="front">
+                      <img src={item.img} width="100" alt="Icon" />
+                    </div>
+                    <div className="back">
+                      <img src={IconFlip} width="100" alt="IconFlip" />
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })
+          )}
         </div>
         <button className="btnRestart" onClick={gameRestart}>
           Again

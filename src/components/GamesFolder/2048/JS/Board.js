@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { Cell, GameOverlay, Tile } from ".";
 import { Board } from "./helper";
 import useEvent from "../hooks/useEvent";
 
 const BoardView = () => {
-  const [board, setBoard] = useState(new Board());
+  const [board, setBoard] = React.useState(new Board());
+  const [record, setRecord] = React.useState(localStorage.getItem("number"));
+
+  if (record < board.score) {
+    setRecord(board.score);
+    localStorage.setItem("number", board.score);
+  }
 
   const handleKeyDown = (event) => {
     if (board.hasWon()) {
@@ -50,6 +56,10 @@ const BoardView = () => {
         <div className="details-box">
           <div className="resetButton" onClick={resetGame}>
             New game
+          </div>
+          <div className="record-box">
+            <div className="score-header">RECORD: </div>
+            <div>{record}</div>
           </div>
           <div className="score-box">
             <div className="score-header">SCORE: </div>

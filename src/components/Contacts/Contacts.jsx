@@ -14,27 +14,31 @@ const Contacts = () => {
           </p>
         </div>
         <div className="link telegramm">
-          <a href="https://t.me/proffi01" target="_blank">
+          <a href="https://t.me/proffi01" target="_blank" rel="noreferrer">
             <p>Telegramm</p>
           </a>
         </div>
         <div className="link instagramm">
-          <a href="https://www.instagram.com/osipovarsen_/" target="_blank">
+          <a
+            href="https://www.instagram.com/osipovarsen_/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <p>Instagramm</p>
           </a>
         </div>
         <div className="link Vk">
-          <a href="https://vk.com/osipovarsen" target="_blank">
+          <a href="https://vk.com/osipovarsen" target="_blank" rel="noreferrer">
             <p>Vk</p>
           </a>
         </div>
         <div className="link Watsap">
-          <a href="https://wa.me/+79624283873" target="_blank">
+          <a href="https://wa.me/+79624283873" target="_blank" rel="noreferrer">
             <p>Watsap</p>
           </a>
         </div>
         <div className="link GitHub">
-          <a href="https://github.com/ArsMen1" target="_blank">
+          <a href="https://github.com/ArsMen1" target="_blank" rel="noreferrer">
             <p>GitHub</p>
           </a>
         </div>

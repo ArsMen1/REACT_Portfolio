@@ -45,6 +45,9 @@ class Snake extends Component {
       case 39:
         this.setState({ direction: "RIGHT" });
         break;
+
+      default:
+        console.log("Default case");
     }
   };
 
@@ -65,6 +68,9 @@ class Snake extends Component {
       case "UP":
         head = [head[0], head[1] - 4];
         break;
+
+      default:
+        console.log("Default case");
     }
     dots.push(head);
     dots.shift();
