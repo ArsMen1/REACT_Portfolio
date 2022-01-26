@@ -22,8 +22,8 @@ function App() {
     <div>
       <div className="wrapper">
         <Header />
-        <Route path="/ " render={Iam} exact />
-        <Route path="/REACT_portfolio/" render={Iam} exact />
+        <Route path="/REACT_portfolio" render={Iam} exact />
+        <Route path="/" render={Iam} exact />
         <Route path="/games" component={Games} exact />
         <Route path="/work" component={Work} exact />
         <Route path="/contacts" component={Contacts} exact />
