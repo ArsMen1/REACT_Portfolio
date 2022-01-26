@@ -24,24 +24,24 @@ const Tic_tac_toe = () => {
         className="start__btn"
         onClick={() => setBoard(Array(9).fill(null))}
       >
-        Очистить поле
+        {winner ? "Начать заново" : "Очистить поле "}
       </button>
     );
   };
 
   return (
     <div className="wrapper_tic_tac_toe">
-      {startNewGame()}
+      <p className={winner ? "game__info winner" : "game__info"}>
+        {winner
+          ? "Победитель " + winner[1]
+          : "Сейчас ходит " + (xIsNext ? "X" : "O")}
+      </p>
       <Board
         squares={board}
         click={handeleClick}
         winnerValue={winner ? winner[0] : null}
       />
-      <p className="game__info">
-        {winner
-          ? "Победитель " + winner[1]
-          : "Сейчас ходит " + (xIsNext ? "X" : "O")}
-      </p>
+      {board.includes("X" || "O") ? startNewGame() : ""}
     </div>
   );
 };
