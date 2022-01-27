@@ -14,7 +14,6 @@ import Snake from "./components/GamesFolder/Snake/Snake";
 import Tic_tac_toe from "./components/GamesFolder/Tic_tac_toe/Tic_tac_toe";
 import Twenty48 from "./components/GamesFolder/2048/Twenty48";
 import RememberPictures from "./components/GamesFolder/RememberPictures/RememberPictures";
-import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
 import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
     <div>
       <div className="wrapper">
         <Header />
-        <Route path="/REACT_portfolio" render={Iam} />
         <Route path="/ " render={Iam} exact />
         <Route path="/games" component={Games} exact />
         <Route path="/work" component={Work} exact />
@@ -32,8 +30,7 @@ function App() {
         <Route path="/tic_tac_toe" component={Tic_tac_toe} exact />
         <Route path="/2048" component={Twenty48} exact />
         <Route path="/RememberPictures" component={RememberPictures} exact />
-        <Route path="/404" component={NotFoundPage} />
-        <Redirect from="*" to="/404" />
+        <Redirect from="*" to="/ " />
         <Navbar />
         <Footer />
       </div>
