@@ -1,5 +1,5 @@
 import React from "react";
-import Square from "../Board/Board";
+import Square from "../Square/Square";
 
 const Board = ({ squares, click, winnerValue }) => {
   let winnerValues = winnerValue === null ? 0 : winnerValue;
@@ -17,4 +17,5 @@ const Board = ({ squares, click, winnerValue }) => {
     </div>
   );
 };
+
 export default Board;

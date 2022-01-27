@@ -9,12 +9,12 @@
 }
 
 .start__btn {
-  width: 200px;
-  height: 35px;
-  margin-bottom: 25px;
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+  margin-top: 25px;
   cursor: pointer;
   color: #fff;
-  outline: none;
   background: #222222;
   border: 1px solid #fff;
 
@@ -26,7 +26,21 @@
 }
 
 .game__info {
-  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 36px;
   color: #fff;
+}
+
+.winner {
+  transform: scale(1);
+  animation: circle 1.5s linear infinite;
+}
+
+@keyframes circle {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(5);
+  }
 }

@@ -1,13 +1,13 @@
 .square_tic_tac_toe {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background: #000;
+  color: #fff;
   border: 1px solid #222222;
-  cursor: pointer;
-  font-size: 60px;
-  outline: none;
-  display: flex;
+  font-size: 150px;
   justify-content: center;
+  align-items: center;
+  cursor: pointer;
 
   &:hover {
     background: #979797;
