@@ -23,6 +23,7 @@ function App() {
       <div className="wrapper">
         <Header />
         <Route path="/REACT_portfolio" render={Iam} exact />
+
         <Route path="/" render={Iam} exact />
         <Route path="/games" component={Games} exact />
         <Route path="/work" component={Work} exact />
