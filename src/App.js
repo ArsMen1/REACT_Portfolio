@@ -22,6 +22,7 @@ function App() {
     <div>
       <div className="wrapper">
         <Header />
+        <Route path="/REACT_portfolio" render={Iam} />
         <Route path="/ " render={Iam} exact />
         <Route path="/games" component={Games} exact />
         <Route path="/work" component={Work} exact />
@@ -31,7 +32,8 @@ function App() {
         <Route path="/tic_tac_toe" component={Tic_tac_toe} exact />
         <Route path="/2048" component={Twenty48} exact />
         <Route path="/RememberPictures" component={RememberPictures} exact />
-        <Redirect from="*" to="/ " />
+        <Route path="/404" component={NotFoundPage} />
+        <Redirect from="*" to="/404" />
         <Navbar />
         <Footer />
       </div>
