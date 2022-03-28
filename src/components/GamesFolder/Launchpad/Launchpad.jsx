@@ -1,5 +1,7 @@
 import React from "react";
-
+/*
+Не работает, нужно рендерить через реакт, не createElement
+*/
 function Launchpad() {
   const board1Ref = React.useRef();
   const board2Ref = React.useRef();
