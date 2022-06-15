@@ -1,12 +1,46 @@
 .Work {
+  width: 69vw;
+
   * {
     color: #fff;
   }
-  p {
-    padding: 50px;
-    font-size: 27px;
-  }
-  a:hover {
-    color: #fafa00
+
+  .work__examples {
+    display: flex;
+    margin: 40px 0;
+
+    span {
+      font-size: 32px;
+    }
+
+    a {
+      width: 500px;
+      height: 200px;
+    }
+
+    .example {
+      border-radius: 50px;
+      margin: 20px;
+      width: 200px;
+      height: 200px;
+    }
+
+    .pizza {
+      background: url(../../assets/img/Work/pizza.jpg) 0 0/100% 100% no-repeat;
+    }
+
+    .socWeb {
+      background: url(../../assets/img/Work/pizza.jpg) 0 0/100% 100% no-repeat;
+    }
+
+    .findFriend {
+      background: url(../../assets/img/Work/findFriend.jpg) 0 0/100% 100%
+        no-repeat;
+    }
+
+    .creatorofgeometry {
+      background: url(../../assets/img/Work/без_фона_цвет+белый.png) 0 0/100%
+        100% no-repeat;
+    }
   }
 }

@@ -1,10 +1,9 @@
 import React from "react";
-import Me from "../../assets/img/Me.jpg";
 
 function Iam() {
   return (
     <div className="Iam">
-      <img src={Me} alt="My_photo" />
+      <div className="My_photo"></div>
       <p>
         Young, promising and confident person.
         <br />I easily find a common language with people and I like to develop.

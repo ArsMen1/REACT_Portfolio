@@ -1,15 +1,38 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Work() {
   return (
     <div className="Work">
-      <p>
-        Since I'm looking for a job, I didn't upload my work to hosting, but if
-        you really want to see what I'm capable of, you can check out my{" "}
-        <a href=" https://github.com/ArsMen1" target="_blank">
-          Github
-        </a>
-      </p>
+      <div className="work__examples">
+        <span>React Redux:</span>
+        <Link href="#" target="_blank" rel="noopener noreferrer">
+          <div className="example pizza"></div>
+        </Link>
+        <Link href="#" target="_blank" rel="noopener noreferrer">
+          <div className="example socWeb"></div>
+        </Link>
+      </div>
+      <div className="work__examples">
+        <span>React Mobx:</span>
+        <Link
+          href="https://test.find-friend.site/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="example findFriend"></div>
+        </Link>
+      </div>
+      <div className="work__examples">
+        <span>Vanilla JS:</span>
+        <Link
+          href="http://creatorofgeometry.ru/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="example creatorofgeometry"></div>
+        </Link>
+      </div>
     </div>
   );
 }

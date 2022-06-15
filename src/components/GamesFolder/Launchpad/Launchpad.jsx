@@ -1,6 +1,34 @@
 import React from "react";
 /*
 Не работает, нужно рендерить через реакт, не createElement
+
+Пример от Димыча:
+const MyPosts = (props) => {
+  const postsElement = props.posts.map((p) => (
+    <Post
+      message={p.message}
+      reiting={p.likeCount}
+      name={p.name}
+      ava={p.ava}
+      key={p.id}
+    />
+  ));
+
+  const addNewPost = (post) => {
+    props.addPost(post.newPostText);
+  };
+
+  return (
+    <div className={s.postBlock}>
+      <h2>Новый пост </h2>
+      <div>
+        <AddNewPostForm onSubmit={addNewPost} />
+        <div className={s.posts}>{postsElement}</div>
+      </div>
+    </div>
+  );
+};
+
 */
 function Launchpad() {
   const board1Ref = React.useRef();
