@@ -1,7 +1,10 @@
 .Iam {
-  display: inline;
   margin-left: 40px;
-  grid-area: I;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 
   .My_photo {
     width: 80%;
@@ -11,11 +14,5 @@
 
   p {
     font-size: 25px;
-  }
-
-  .right {
-    position: relative;
-    right: 60px;
-    float: right;
   }
 }

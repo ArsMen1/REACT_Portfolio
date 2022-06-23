@@ -1,16 +1,13 @@
 .Work {
   width: 69vw;
 
-  * {
-    color: #fff;
-  }
-
   .work__examples {
     display: flex;
     margin: 40px 0;
 
     span {
       font-size: 32px;
+      color: #fff;
     }
 
     a {
@@ -19,7 +16,7 @@
     }
 
     .example {
-      border-radius: 50px;
+      border-radius: 20px;
       margin: 20px;
       width: 200px;
       height: 200px;

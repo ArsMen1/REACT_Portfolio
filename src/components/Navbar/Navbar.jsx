@@ -5,16 +5,16 @@ function Navbar() {
   return (
     <div className="Navbar">
       <div className="Navbar__menu">
-        <NavLink className={"Navbar__paragraph"} to="/ ">
+        <NavLink className={"Navbar__paragraph"} to="/" exact>
           About Me
         </NavLink>
-        <NavLink className={"Navbar__paragraph"} to="/games">
+        <NavLink className={"Navbar__paragraph"} to="/games" exact>
           Games
         </NavLink>
-        <NavLink className={"Navbar__paragraph"} to="/work">
+        <NavLink className={"Navbar__paragraph"} to="/work" exact>
           Work examples
         </NavLink>
-        <NavLink className={"Navbar__paragraph"} to="/contacts">
+        <NavLink className={"Navbar__paragraph"} to="/contacts" exact>
           Contacts
         </NavLink>
       </div>
