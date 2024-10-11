@@ -6,7 +6,7 @@ function Navbar() {
     <div className="Navbar">
       <div className="Navbar__menu">
         <NavLink className={"Navbar__paragraph"} to="/" exact>
-          About Me
+          About Game
         </NavLink>
         <NavLink className={"Navbar__paragraph"} to="/games" exact>
           Games
@@ -21,4 +21,5 @@ function Navbar() {
     </div>
   );
 }
+
 export default Navbar;

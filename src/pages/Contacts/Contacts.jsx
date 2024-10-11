@@ -15,7 +15,7 @@ const Contacts = () => {
           </p>
         </div>
         <div className="link telegramm">
-          <Link href="https://t.me/proffi01" target="_blank" rel="noreferrer">
+          <Link href="https://t.me/main_Dev" target="_blank" rel="noreferrer">
             <p>Telegramm</p>
           </Link>
         </div>

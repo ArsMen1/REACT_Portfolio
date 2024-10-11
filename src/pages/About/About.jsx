@@ -1,8 +1,8 @@
 import React from "react";
 
-function Iam() {
+function About() {
   return (
-    <div className="Iam">
+    <div className="About">
       <div className="My_photo"></div>
       <p>
         Young, promising and confident person.
@@ -16,4 +16,4 @@ function Iam() {
   );
 }
 
-export default Iam;
+export default About;

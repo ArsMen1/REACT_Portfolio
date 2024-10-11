@@ -29,25 +29,28 @@
     }
 
     .launchpad {
-      background: url(../GamesFolder/icon/launchpad.png) 0 0/100% 100% no-repeat;
-    }
-
-    .snake {
-      background: url(../GamesFolder/icon/snake.png) 0 0/100% 100% no-repeat;
-    }
-
-    .tic_tac_toe {
-      background: url(../GamesFolder/icon/tic-tac-toe-hand-drawn-game.png) 0 0/100%
+      background: url(../../components/GamesFolder/icon/launchpad.png) 0 0/100%
         100% no-repeat;
     }
 
+    .snake {
+      background: url(../../components/GamesFolder/icon/snake.png) 0 0/100% 100%
+        no-repeat;
+    }
+
+    .tic_tac_toe {
+      background: url(../../components/GamesFolder/icon/tic-tac-toe-hand-drawn-game.png)
+        0 0/100% 100% no-repeat;
+    }
+
     .Twenty48 {
-      background: url(../GamesFolder/icon/2048.png) 0 0/100% 100% no-repeat;
+      background: url(../../components/GamesFolder/icon/2048.png) 0 0/100% 100%
+        no-repeat;
     }
 
     .RememberPictures {
-      background: url(../GamesFolder/icon/RememberPictures.jpg) 0 0/100% 100%
-        no-repeat;
+      background: url(../../components/GamesFolder/icon/RememberPictures.jpg) 0
+        0/100% 100% no-repeat;
     }
   }
 }
