@@ -12,8 +12,8 @@ const getRandomCordinates = () => {
 
 class Snake extends Component {
   state = {
-    food: getRandomCordinates(),
-    speed: 200, //устанавливаем скорость
+    food: [40, 40],
+    speed: 200,
     direction: "RIGHT",
     snakeDots: [
       [0, 0],
@@ -88,6 +88,8 @@ class Snake extends Component {
       });
       this.enlargeSnake();
       this.increaseSpeed();
+      clearInterval();
+      setInterval(this.moveSnake, this.state.speed);
     }
   }
 

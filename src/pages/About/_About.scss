@@ -1,15 +1,16 @@
 .About {
-  margin-left: 40px;
+  margin: 20px 0 20px 40px;
   overflow: auto;
 
-  &::-webkit-scrollbar {
-    width: 0;
-  }
+  // &::-webkit-scrollbar {
+  //   width: 0px;
+  // }
 
-  .My_photo {
-    width: 80%;
-    height: 100%;
-    background: url(../../assets/img/Me.jpg) 0 0/100% 100% no-repeat;
+  .Game_photo {
+    float: left;
+    width: 40vw;
+    height: 50vh;
+    background: url(../../assets/img/Game.png) no-repeat;
   }
 
   p {

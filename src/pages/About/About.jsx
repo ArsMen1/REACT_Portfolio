@@ -3,14 +3,23 @@ import React from "react";
 function About() {
   return (
     <div className="About">
-      <div className="My_photo"></div>
+      <span className="Game_photo"></span>
       <p>
-        Young, promising and confident person.
-        <br />I easily find a common language with people and I like to develop.
-        <br />I am engaged in programming web applications and I feel that I
-        have found myself in this.
-        <br />I want to become a middle developer in a couple of years, and
-        after a while I want to become a senior. Big plans and big dreams..
+        Snake is a genre of action video games where the player maneuvers the
+        end of a growing line, often themed as a snake. The player must keep the
+        snake from colliding with both other obstacles and itself, which gets
+        harder as the snake lengthens. It originated in the 1976 two-player
+        arcade video game Blockade from Gremlin Industries where the goal is to
+        survive longer than the other player. The concept evolved into a
+        single-player variant where a snake gets longer with each piece of food
+        eaten—often apples or eggs. The simplicity and low technical
+        requirements of snake games have resulted in hundreds of versions—some
+        of which have the word snake or worm in the title—for many platforms.
+        1982's Tron arcade game, based on the film, includes snake gameplay for
+        the single-player Light Cycle segment, and some later snake games borrow
+        the theme. After a version simply called Snake was preloaded on Nokia
+        mobile phones in 1998, there was a resurgence of interest in snake
+        games.
       </p>
     </div>
   );

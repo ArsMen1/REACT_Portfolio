@@ -3,8 +3,8 @@ import React from "react";
 function Header() {
   return (
     <div className="Header">
-      <h1>Osipov Arsen</h1>
-      <p>Frontend developer</p>
+      <h1>TimeToWon.ru</h1>
+      <p>Become the best!</p>
     </div>
   );
 }

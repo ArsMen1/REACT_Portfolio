@@ -9,7 +9,7 @@ import {
   About,
   Contacts,
   Games,
-  Work,
+  LeaderBoard,
 } from "./pages";
 import {
   Launchpad,
@@ -25,9 +25,9 @@ function App() {
       <div className="wrapper">
         <Header />
         <Route path="/" render={About} exact />
-        <Route path="/REACT_portfolio/" render={About} exact />
+        {/* <Route path="/REACT_portfolio/" render={About} exact /> */}
         <Route path="/games" component={Games} exact />
-        <Route path="/work" component={Work} exact />
+        <Route path="/LeaderBoard" component={LeaderBoard} exact />
         <Route path="/contacts" component={Contacts} exact />
         <Route path="/snake" component={Snake} exact />
         <Route path="/Launchpad" component={Launchpad} exact />

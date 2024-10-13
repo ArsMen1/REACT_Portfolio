@@ -8,7 +8,7 @@ const Contacts = () => {
       <div className="Contacts__link">
         <div className="link phoneImg">
           <p className="phone">
-            By&nbsp;phone
+            By&nbsp;phone <br />
             <span className="phoneNumbers">
               +7&nbsp;(930)&nbsp;011&nbsp;70&nbsp;26
             </span>
@@ -19,7 +19,7 @@ const Contacts = () => {
             <p>Telegramm</p>
           </Link>
         </div>
-        <div className="link instagramm">
+        {/* <div className="link instagramm">
           <Link
             href="https://www.instagram.com/osipovarsen_/"
             target="_blank"
@@ -27,7 +27,7 @@ const Contacts = () => {
           >
             <p>Instagramm</p>
           </Link>
-        </div>
+        </div> */}
         <div className="link Vk">
           <Link
             href="https://vk.com/osipovarsen"
@@ -46,7 +46,7 @@ const Contacts = () => {
             <p>Watsap</p>
           </Link>
         </div>
-        <div className="link GitHub">
+        {/* <div className="link GitHub">
           <Link
             href="https://github.com/ArsMen1"
             target="_blank"
@@ -54,7 +54,7 @@ const Contacts = () => {
           >
             <p>GitHub</p>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );
